@@ -1,0 +1,215 @@
+body{
+  background-color:#087E8B;
+  display: grid;
+  grid-template-columns: 200px 1040px 200px;
+  grid-template-rows: 100px 800px 100px;
+  grid-template-areas: 
+  "header header header"
+  "side-left main side-right"
+  "footer footer footer";
+  margin: 0px;
+}
+header,aside,main,footer {
+  border: 0px solid black; 
+  }
+
+header{
+  grid-area: header;
+}
+#aside-left{
+  grid-area: side-left;
+}
+#aside-right{
+  grid-area: side-right;
+}
+footer{
+  grid-area: footer;
+}
+main{
+  grid-area: main;
+}
+
+
+
+
+
+.logo{
+  position: sticky;
+  top: 4px;
+}
+h1{
+  text-align: center;
+  border-radius: 10px ;
+  width: 5cm;
+  margin: 0% 42%;
+  position: sticky;
+  top: 60px;
+  
+  background-color: #FF5A5F;
+  color: white;
+}
+
+
+
+.HomeIntro{
+  position: absolute;
+  left: 250px;
+  bottom: 160px;
+  width: 400px;
+  word-wrap: break-word;
+  background-color: #FF5A5F;
+  opacity: 0.9;
+  border-radius: 10%;
+  text-align: center
+
+
+}
+.vidhome{
+  position: absolute;
+  left: 700px;
+  bottom: 40px;
+}
+
+
+table,th,td {
+    border: 3px solid white;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  *{
+    font-family: sans-serif;
+    color: white;
+  }
+
+
+
+
+.navbar { 
+  position: sticky;
+  overflow: hidden;
+  padding: 13px 0pt;
+  margin: 12% ;
+  display: inline;
+ border-radius: 100px;
+ background-color: #FF5A5F;
+  top: 5px;
+}
+.anav {
+  border-radius: 100px;
+  width: 12%;
+  text-align: center;
+  background-color: #FF5A5F;
+  color: white;
+  display: inline-block;
+  padding: 13px 0pt  ;
+  margin: 12px 0pt;
+  font-size: 15px;
+  text-decoration: none;
+
+}
+.anav:hover {
+  background-color: #f00008;
+
+}
+
+
+
+input[type=text], select, textarea {
+  width: 50%; 
+  color: black;
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 15px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  
+}
+
+.contactsendbutton {
+  background-color: #FF5A5F;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 520px;
+}
+
+
+.quiz{
+  position: relative;
+  width: 21%;
+    border-radius: 5%;
+    padding: 50px;
+    background-color: #054147;
+    opacity: 0.7;
+    margin: 1%;
+    display: inline-block;
+  }
+
+
+
+  .dark-mode {
+    background-color: rgb(42, 42, 42);
+    color: rgb(190, 190, 190);
+  }
+.darkmodebutton{
+  position: absolute;
+  background-color: #FF5A5F;
+  border-radius: 15px;
+  font-size: 15px;
+  color: #b3b3b3;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  top:0%;
+  right:0%
+  
+}
+.homep{
+  position:absolute;
+  top: 300px;
+
+}
+
+.quizbutton {
+
+  background-color: #FF5A5F;
+  color: white;
+  padding: 12px 26px;
+  text-align: center;
+  font-size: 17px;
+  margin: 2px 0px;
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 14px;
+}
+.quizbutton:hover {
+  opacity: 1;
+}
+
+
+.contacth2{
+  text-align: center;
+  font-size: 30px;
+}
+
+.contactimage{
+  position: relative;
+  top: 70px;
+  right: 60px;
+
+}
+
+.contactform{
+  position: relative;
+  bottom: 233px;
+  text-align: right;
+}

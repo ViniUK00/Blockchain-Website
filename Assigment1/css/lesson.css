@@ -1,0 +1,30 @@
+body{
+    background-color:#087E8B;
+    display: grid;
+    grid-template-columns: 200px 1040px 200px;
+    grid-template-rows: 100px 4000px 100px;
+    grid-template-areas: 
+    "header header header"
+    "side-left main side-right"
+    "footer footer footer";
+    margin: 0px;
+  }
+  header,aside,main,footer {
+    border: 0px solid black; 
+    }
+  
+  header{
+    grid-area: header;
+  }
+  #aside-left{
+    grid-area: side-left;
+  }
+  #aside-right{
+    grid-area: side-right;
+  }
+  footer{
+    grid-area: footer;
+  }
+  main{
+    grid-area: main;
+  }

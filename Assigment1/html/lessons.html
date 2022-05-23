@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Selecting the language to help search engines -->
+<head>
+    <meta charset="UTF-8">
+    <title>Lessons</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lesson.css">
+
+</head>
+<body> 
+
+    <header>
+        <div class="logo"><a href="../html/index.html"><img src="../html/imgs/logo.png" alt="WEBpage logo" height="90px" 
+            width="160px"></a></div>
+        <button onclick="DarkMode()" class="darkmodebutton">Dark Mode</button>
+        <script src="../javascript/darkmode.js"></script>
+    </header>
+
+    <main>
+        <div class="navbar">
+            <!--This list is the navigation bar-->
+           <a class="anav" href="index.html">Home Page</a>
+           <a class="anav" href="about.html">About Us</a>
+           <a class="anav" href="lessons.html">Lessons</a>
+           <a class="anav" href="quizzes.html">Quizzes</a>
+           <a class="anav" href="resources.html">Resources</a>
+           <a class="anav" href="contact.html">Contact Us</a>
+    </div>
+
+    <h1>Lessons</h1> <!--Header 1 to show to the user in which page is navigating-->
+    <div class="lessons">
+        <h2>What is blockchain?</h2>
+    <p>Blockchain, sometimes referred to as Distributed Ledger Technology (DLT), 
+        makes the history of any digital asset unalterable and 
+        transparent through the use of decentralization and cryptographic hashing.  
+        A simple analogy for understanding blockchain technology is a Google Doc. 
+        When we create a document and share it with a group of people, the document is 
+        distributed instead of copied or transferred. This creates a decentralized 
+        distribution chain that gives everyone access to the document at the same time. 
+        No one is locked out awaiting changes from another party, while all modifications 
+        to the doc are being recorded in real-time, making changes completely transparent.</p>
+
+    <h4>Blockchain consists of three important concepts: blocks, nodes and miners</h4>
+    
+
+    <ul>
+        <li>Blocks</li>
+        <li>Miners</li>
+        <li>Nodes</li>
+    </ul>
+
+    <h3>Blocks</h3>
+    <p>Every chain consists of multiple blocks and each block has three basic elements: </p>
+    <ul>
+        <li>The data in the block.</li>
+        <li>A 32-bit whole number called a nonce. The nonce is randomly generated when a block 
+            is created, which then generates a block header hash</li>
+        <li>The hash is a 256-bit number wedded to the nonce. 
+            It must start with a huge number of zeroes (i.e., be extremely small).
+        </li>
+
+    </ul>
+    <p>When the first block of a chain is created, a nonce generates the cryptographic
+         hash. The data in the block is considered signed and forever tied to the nonce 
+         and hash unless it is mined.  </p>
+
+    <img src="../html/imgs/block.png" alt="Block of blockchains">
+    <h3>Miners</h3>
+    <p>Miners create new blocks on the chain through a process called mining.</p>
+    <p>In a blockchain every block has its own unique nonce and hash, but also 
+        references the hash of the previous block in the chain, so mining a block 
+        isn't easy, especially on large chains.</p>
+    <p>Miners use special software to solve the incredibly complex math problem of 
+        finding a nonce that generates an accepted hash. Because the nonce is only 
+        32 bits and the hash is 256, there are roughly four billion possible nonce-hash
+         combinations that must be mined before the right one is found. When 
+         that happens miners are said to have found the "golden nonce" and their 
+         block is added to the chain. </p>
+    <p>Making a change to any block earlier in the chain requires re-mining not 
+        just the block with the change, but all of the blocks that come after. 
+        This is why it's extremely difficult to manipulate blockchain technology. 
+        Think of it as "safety in math" since finding golden nonces requires an 
+        enormous amount of time and computing power.</p>
+    <p>When a block is successfully mined, the change is accepted by all of the nodes
+         on the network and the miner is rewarded financially.</p>
+    <img src="../html/imgs/mine.webp" alt="Miners" height="600" width="1100">
+    <h3>Nodes</h3>
+    <p>One of the most important concepts in blockchain technology is decentralization. 
+        No one computer or organization can own the chain. Instead, it is a distributed
+         ledger via the nodes connected to the chain. Nodes can be any kind of 
+         electronic device that maintains copies of the blockchain and keeps the network 
+         functioning. </p>
+    <p>Every node has its own copy of the blockchain and the network must 
+        algorithmically approve any newly mined block for the chain to be updated, 
+        trusted and verified. Since blockchains are transparent, every action in the 
+        ledger can be easily checked and viewed. Each participant is given a unique 
+        alphanumeric identification number that shows their transactions.</p>
+    <p>Combining public information with a system of checks-and-balances helps the 
+        blockchain maintain integrity and creates trust among users. 
+        Essentially, blockchains can be thought of as the scalability of trust 
+        via technology. </p>
+    <img src="../html/imgs/node.png" alt="Nodes">
+
+    <h2>How Are Blockchains Used?</h2>
+    <p>As we now know, blocks on Bitcoin’s blockchain store data about monetary 
+        transactions. Today, there are more than 10,000 other cryptocurrency systems 
+        running on blockchain. But it turns out that blockchain is actually a reliable 
+        way of storing data about other types of transactions as well.</p>
+
+    <p>Some companies that have already incorporated blockchain include Walmart, 
+        Pfizer, AIG, Siemens, Unilever, and a host of others. For example, IBM has 
+        created its Food Trust blockchain to trace the journey that food products t
+        ake to get to their locations</p>
+
+    <p>Why do this? The food industry has seen countless outbreaks of E. coli, 
+        salmonella, and listeria, as well as hazardous materials being accidentally
+         introduced to foods. In the past, it has taken weeks to find the source of 
+         these outbreaks or the cause of sickness from what people are eating. 
+         Using blockchain gives brands the ability to track a food product’s route 
+         from its origin, through each stop it makes, and finally, its delivery. 
+         If a food is found to be contaminated, then it can be traced all the way back 
+         through each stop to its origin. Not only that, but these companies can also 
+         now see everything else it may have come in contact with, allowing the 
+         identification of the problem to occur far sooner and potentially saving lives.
+          This is one example of blockchain in practice, but there are many other forms 
+          of blockchain implementation.</p>
+
+    <h3>Banking and Finance</h3>
+    <p>Perhaps no industry stands to benefit from integrating blockchain into
+         its business operations more than banking. Financial institutions only operate 
+         during business hours, usually five days a week. That means if you try to
+          deposit a check on Friday at 6 p.m., you will likely have to wait until
+           Monday morning to see that money hit your account. Even if you do make 
+           your deposit during business hours, the transaction can still take one 
+           to three days to verify due to the sheer volume of transactions that banks 
+           need to settle. Blockchain, on the other hand, never sleeps.</p>
+
+    <p>By integrating blockchain into banks, consumers can see their 
+        transactions processed in as little as 10 minutes—basically the 
+        time it takes to add a block to the blockchain, regardless of holidays 
+        or the time of day or week. With blockchain, banks also have the opportunity
+         to exchange funds between institutions more quickly and securely. 
+         In the stock trading business, for example, the settlement and clearing 
+         process can take up to three days (or longer, if trading internationally), 
+         meaning that the money and shares are frozen for that period of time.</p>
+
+    <p>Given the size of the sums involved, even the few days that the money is 
+        in transit can carry significant costs and risks for banks.</p>
+
+    <h3>Currency</h3>
+    <p>Blockchain forms the bedrock for cryptocurrencies like Bitcoin. 
+        The U.S. dollar is controlled by the Federal Reserve. Under this central 
+        authority system, a user’s data and currency are technically at the whim 
+        of their bank or government. If a user’s bank is hacked, the client’s private 
+        information is at risk. If the client’s bank collapses or the client lives in 
+        a country with an unstable government, the value of their currency may be at 
+        risk. In 2008, several failing banks were bailed out—partially using taxpayer 
+        money. These are the worries out of which Bitcoin was first conceived and 
+        developed.</p>
+    <p>By spreading its operations across a network of computers, blockchain 
+        allows Bitcoin and other cryptocurrencies to operate without the need for
+         a central authority. This not only reduces risk but also eliminates many 
+         of the processing and transaction fees. It can also give those in countries
+          with unstable currencies or financial infrastructures a more stable currency
+           with more applications and a wider network of individuals and institutions 
+           with whom they can do business, both domestically and internationally.</p>
+    <p>Using <a href="https://www.investopedia.com/terms/d/digital-wallet.asp">cryptocurrency wallets</a> for savings accounts or as a means 
+        of payment is especially profound for those who have no state 
+        identification. Some countries may be war-torn or have governments 
+        that lack any real infrastructure to provide identification. 
+        Citizens of such countries may not have access to savings or brokerage 
+        accounts—and, therefore, no way to safely store wealth.</p>
+    <h3>Healthcare</h3>
+    <p>Healthcare providers can leverage blockchain to securely store their patients’ medical records. When a medical record is generated and signed, 
+        it can be written into the blockchain, which provides patients with the proof 
+        and confidence that the record cannot be changed. These personal health records
+         could be encoded and stored on the blockchain with a private key, so that they 
+         are only accessible by certain individuals, thereby ensuring privacy.</p>
+    <h2>Who Invented Blockchain?</h2>
+    <p>Blockchain technology was first outlined in 1991 by Stuart Haber and 
+        W. Scott Stornetta, two mathematicians who wanted to implement a system 
+        where document time stamps could not be tampered with.1 In the late 1990s,
+         cypherpunk Nick Szabo proposed using a blockchain to secure a digital 
+         payments system, known as <a href="https://www.investopedia.com/terms/b/bit-gold.asp">bit gold</a> (which was never implemented)</p>
+
+    <h2>What’s Next for Blockchain?</h2>
+    <p>With many practical applications for the technology already being 
+        implemented and explored, blockchain is finally making a name for 
+        itself in no small part because of bitcoin and cryptocurrency. 
+        As a buzzword on the tongue of every investor in the nation, blockchain 
+        stands to make business and government operations more accurate, efficient, 
+        secure, and cheap, with fewer middlemen.</p>
+    <p>As we prepare to head into the third decade of blockchain, 
+        it’s no longer a question of if legacy companies will catch on to 
+        the technology—it’s a question of when. Today, we see a proliferation 
+        of NFTs and the tokenization of assets. The next decades will prove to 
+        be an important period of growth for blockchain.</p>
+        
+
+    </div>
+
+    </main>
+
+
+    <footer>
+        <small>Ervin Bilo HTML version</small>
+        <a href="../validation/indexval.png"> <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+        alt="html validator" /></a>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
