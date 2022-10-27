@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Selecting the language to help search engines -->
+<head>
+    <meta charset="UTF-8">
+    <title>Quizzes</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="../html/index.html"><img src="../html/imgs/logo.png" alt="WEBpage logo" height="90px" 
+            width="160px"></a></div>
+
+        <button onclick="DarkMode()" class="darkmodebutton">Dark Mode</button>
+        <script src="../javascript/formsvalidation.js"></script>
+        <script src="../javascript/darkmode.js"></script>
+    </header>
+
+
+    <main>
+        <div class="navbar">
+            <!--This list is the navigation bar-->
+           <a class="anav" href="index.html">Home Page</a>
+           <a class="anav" href="about.html">About Us</a>
+           <a class="anav" href="lessons.html">Lessons</a>
+           <a class="anav" href="quizzes.html">Quizzes</a>
+           <a class="anav" href="resources.html">Resources</a>
+           <a class="anav" href="contact.html">Contact Us</a>
+        </div>
+        <h1>Quizzes</h1> <!--Header 1 to show to the user in which page is navigating-->
+        
+        
+        <div class="quiz" > 
+            <h2>Quizzes 1</h2>
+            <form name="quiz1">
+                <p>1.1) Blockchain in not a decentralized technology.</p>
+                <input type="radio" name="radio1" > 
+                <label for="true1" id="true1">True</label> <br>
+                <input type="radio" name="radio1"  >
+                <label for="hello" id="hello">False</label>
+                <br>
+                <p>1.2) What is a node?</p>
+                <input type="radio" name="radio2"  > 
+                <label for="radio2" id="ans4">A type of cryptocurrency</label><br>
+                <input type="radio" name="radio2"  >
+                <label for="radio" id="ans5">A computer on a Blockchain network</label><br>
+                <input type="radio" name="radio2">
+                <label for="radio2" id="ans6">A Blockchain  </label><br>
+                <p>1.3) What is Blockchain? </p>
+                <input type="radio" name="radio3"  >
+                <label for="radio3" id="ans7">A distributed ledger on a peer to peer network</label> <br>
+                <input type="radio" name="radio3"  > 
+                <label for="radio3" id="ans8">A type of cryptocurrency </label> <br>
+                <input type="radio" name="radio3"  > 
+                <label for="radio3" id="ans9">An exchange</label><br>
+                <br>
+
+                <button class="quizbutton" type="button" onclick="quiz1validation(form)">Submit</button>
+    
+                <button type="reset" class="quizbutton" onclick="removedecor(form)">Reset </button>
+            </form>
+        </div>
+        <div class="quiz"> 
+            <h2>Quizzes 2</h2>
+                <form name="quiz2">
+                    <p>2.1) What does P2P stand for?
+                    </p>
+                    <input type="radio" name="radio4">
+                    <label for="radio4" id="ans10">Password to Password</label> <br>
+                    <input type="radio" name="radio4">
+                    <label for="radio4" id="ans11">Peer to Peer</label> <br>
+                    <br>
+                    <p>2.2) What is a miner?</p>
+                    <input type="radio" name="radio5"  > 
+                    <label for="radio5" id="ans12">Computers that validate and process blockchain transactions</label><br>
+                    <input type="radio" name="radio5"  >
+                    <label for="radio5" id="ans13">A computer on a Blockchain network </label>    <br>
+                    <input type="radio" name="radio5"  >
+                    <label for="radio5" id="ans14">A Blockhain</label> <br>
+                    <p>2.3) Which is NOT a part of asymmetric encryption? </p>
+                    <input type="radio" name="radio6"  >
+                    <label for="radio6" id="ans15">A distributed ledger on a peer to peer network </label> <br>
+                    <input type="radio" name="radio6"  > 
+                    <label for="radio6" id="ans16"> Mining </label> <br>
+                    <input type="radio" name="radio6"  >
+                    <label for="radio6" id="ans17">An exchange</label> <br>
+                    <br>
+    
+    
+    
+                <button class="quizbutton" type="button" onclick="quiz2validation(form)">Submit</button>
+                <button type="reset" class="quizbutton" onclick="removedecor(form)">Reset </button>
+        </div>
+                
+                </form>
+        <div class="quiz">
+            <h2>Quizzes 3</h2>
+                    <form name="quiz3">
+                        <p>3.1) What is the term for when a blockchain splits?</p>
+                        <input type="radio" name="radio7"> 
+                        <label for="radio7" id="ans18">A fork</label> <br>
+                        <input type="radio" name="radio7" >
+                        <label for="radio7" id="ans19">A merger</label> <br>
+                        <br>
+                        <p>3.2) What is the purpose of a nonce?</p>
+                        <input type="radio" name="radio8" >  
+                        <label for="radio8" id="ans20">Prevents double spending</label><br>
+                        <input type="radio" name="radio8" >
+                        <label for="radio9" id="ans21"> Follows nouns </label>   <br>
+                        <input type="radio" name="radio8" >  
+                        <label for="radio8" id="ans22">Sends information to the blockchain network</label>                       <br>
+                        <p>3.3) What is cold storage? </p>
+                        <input type="radio" name="radio9" >   
+                        <label for="radio9" id="ans23">A private key not connected to the Internet</label>                      <br>
+                        <input type="radio" name="radio9" >
+                        <label for="radio9" id="ans24">A type of cryptocurrency  </label> <br>
+                        <input type="radio" name="radio9" > 
+                        <label for="radio9" id="ans25">An exchange </label><br>
+                        <br>
+        
+        
+        
+                    <button class="quizbutton" type="button" onclick="quiz3validation(form)">Submit</button>
+                    <button type="reset" class="quizbutton" onclick="removedecor(form)">Reset </button>
+                    </form>
+
+        </div>
+                    
+
+
+
+
+
+
+            
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <footer class="quizfooter">
+        <small>Ervin Bilo HTML version</small>
+        <a href="../validation/quizzesval.png"> <img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+            alt="html validator" /></a>
+    </footer>
+       
+</body>
+</html>
